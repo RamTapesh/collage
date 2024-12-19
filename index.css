@@ -1,0 +1,265 @@
+*{
+    padding 0;
+    margin 0;
+    box-sizing: border-box;
+}
+.aims{
+    background-color: aqua;
+
+    display: flex;
+    
+
+
+}
+img{
+    height: 300px;
+    width: 300px;
+}/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background: #1a73e8;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.aims {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffbb33;
+}
+
+/* Home section styles */
+#home {
+    background: url('your-image.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 100px 0;
+    color: white;
+    animation: slideIn 2s ease-in-out;
+}
+
+#home h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInUp 2s forwards;
+}
+
+#home p {
+    font-size: 1.2rem;
+    opacity: 0;
+    animation: fadeInUp 2s 0.5s forwards;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ffbb33;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    animation: fadeInUp 2s 1s forwards;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+/* About section styles */
+#about {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Courses section styles */
+#courses {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.courses h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.course-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    width: 30%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+}
+
+.course h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.course p {
+    font-size: 1rem;
+}
+
+/* Contact section styles */
+#contact {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #005cbf;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
