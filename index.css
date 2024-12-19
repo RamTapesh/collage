@@ -1,10 +1,10 @@
 *{
-    padding 0;
-    margin 0;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 .aims{
-    background-color: aqua;
+
 
     display: flex;
     
@@ -31,9 +31,9 @@ body {
 
 /* Header styles */
 header {
-    background: #1a73e8;
+    background: #baa0c0;
     color: #fff;
-    padding: 20px;
+    padding: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,14 +47,15 @@ header {
 }
 
 .logo img {
-    width: 50px;
-    height: 50px;
+    width: 120px;
+    height: 80px;
     margin-right: 10px;
 }
 
 .aims {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-style: italic;
+  color: #4795e8;
 }
 
 header p {
@@ -85,25 +86,36 @@ nav ul li a:hover {
 
 /* Home section styles */
 #home {
-    background: url('your-image.jpg') no-repeat center center/cover;
-    text-align: center;
-    padding: 100px 0;
-    color: white;
+    background: url(image/home.jpg) no-repeat center center/cover;
+    
+    padding: 300px 0;
+    color: rgb(67, 11, 172);
     animation: slideIn 2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 4rem;
+
+}
+#home h2{
+    font-size: 3rem;
+
+    /* padding-top: 4px; */
 }
 
-#home h2 {
+#about h2 {
     font-size: 3rem;
-    margin-bottom: 20px;
     opacity: 0;
     animation: fadeInUp 2s forwards;
+
 }
 
-#home p {
+#about p {
     font-size: 1.2rem;
     opacity: 0;
     animation: fadeInUp 2s 0.5s forwards;
 }
+
 
 button {
     padding: 10px 20px;
@@ -121,9 +133,15 @@ button:hover {
 
 /* About section styles */
 #about {
-    background-color: white;
+    img {
+        float: right;
+        border: 2px solid black;
+        width: 500px;
+    }
+    
+    background-color: rgb(237, 229, 229);
     padding: 50px 20px;
-    text-align: center;
+    text-align: left;
     animation: fadeIn 2s ease-in-out;
 }
 
@@ -135,15 +153,19 @@ button:hover {
 #about p {
     font-size: 1.1rem;
     max-width: 800px;
-    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 /* Courses section styles */
 #courses {
-    background-color: #f9f9f9;
-    padding: 50px 20px;
+    background: url('image/ncslksln.jpg') no-repeat center center/cover;
     text-align: center;
-}
+    padding: 100px 0;
+    color: rgb(7, 7, 6);
+
+    animation: slideIn 2s ease-in-out;
+ }
+
 
 .courses h2 {
     font-size: 2.5rem;
@@ -157,7 +179,7 @@ button:hover {
 }
 
 .course {
-    background: #fff;
+    background: #afaece;
     border: 1px solid #ddd;
     padding: 20px;
     margin: 20px;
@@ -182,7 +204,7 @@ button:hover {
 
 /* Contact section styles */
 #contact {
-    background-color: #fff;
+    background-color: #93d0d2;
     padding: 50px 20px;
     text-align: center;
     animation: fadeIn 2s ease-in-out;
@@ -209,7 +231,7 @@ form input, form textarea {
 
 form button {
     padding: 10px 20px;
-    background-color: #1a73e8;
+    background-color: #afc1d8;
     color: white;
     border: none;
     border-radius: 5px;
